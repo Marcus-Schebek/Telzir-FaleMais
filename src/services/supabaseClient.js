@@ -9,7 +9,7 @@ export async function signInWithGoogle() {
     const { user, session, error } = await supabase.auth.signIn({
       provider: 'google',
     }, {
-      redirectTo: 'https://telzir-fale-mais.vercel.app/app'
+      redirectTo:'https://telzir-fale-mais.vercel.app/app'
     })
   }
 
@@ -17,7 +17,7 @@ export async function signInWithGoogle() {
     const { user, session, error } = await supabase.auth.signIn({
       provider: 'facebook',
     },{
-      redirectTo: 'https://telzir-fale-mais.vercel.app/app'
+      redirectTo:'https://telzir-fale-mais.vercel.app/app'
     })
   }
 
